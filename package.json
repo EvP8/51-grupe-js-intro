@@ -1,0 +1,14 @@
+{
+  "name": "51-grupe-js-intro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "number": "node --watch ./js/kintamieji/number.js",
+    "dev": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Evaldas Petkus <https://github.com/EvP8>",
+  "license": "ISC",
+  "description": ""
+}
