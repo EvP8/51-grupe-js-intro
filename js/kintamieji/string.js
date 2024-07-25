@@ -11,6 +11,10 @@ Operatoriai:
 
 Savybes:
 .length - grazina tekste simboliu kieki (ilgi)
+
+Interpretavimas:
+- tuscias string - false
+- ne tuscias string - true
 */
 
 const single = 'Labas rytas, Lietuva!';

@@ -20,6 +20,10 @@ Kas yra nenormalus "skaiciai"?
 Operatoriai:
     - aritmetiniai: +, -, /, *, %, ++, --
     - aritmetiniai priskyrimo: +=, -=, /=, *=, %=
+
+Operatoriu skaiciavimu vykdymo eiliskumas:
+    1) *, /
+    2) +, -, %
 */
 
 console.log(1);
