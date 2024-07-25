@@ -207,3 +207,15 @@ console.log(skola);
 
 --skola;
 console.log(skola);
+
+console.clear();
+
+
+const skaicius = 10.8;
+const daliklis = 5;
+
+const liekana = skaicius % daliklis;
+const sveikasisSkaicius = (skaicius - liekana) / daliklis;
+
+console.log(skaicius, daliklis, liekana);
+console.log(skaicius, daliklis, sveikasisSkaicius);
