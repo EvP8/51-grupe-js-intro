@@ -15,10 +15,10 @@ console.log(4, 5, 6, 7, 8, 9);
 
 /*
 kintamieji (duomenu tipai):
-    - iniciavimo būdai
-    - number
+    + iniciavimo būdai
+    + number
     - string (tekstas)
-    - boolean (true/false)
+    + boolean (true/false)
     - array (sąrašas)
     - object (kompleksiškas duomuo/struktūra)
     - null
@@ -50,6 +50,11 @@ class (oop):
     - inheritence
     - private values
     - static method
+methods:
+    - number
+    - string
+    - array
+    - object
 event listeners:
     - keyboard click
     - mouse click (left/main)

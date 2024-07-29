@@ -85,6 +85,6 @@ console.log(false || false && true);
 console.log(false || true && false);
 console.log(true || false && false);
 console.log(false || false && false);
-// console.log('--------');
+console.log('--------');
 
 console.log(true && true && true && true);
