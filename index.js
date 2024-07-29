@@ -19,7 +19,7 @@ kintamieji (duomenu tipai):
     + number
     - string (tekstas)
     + boolean (true/false)
-    - array (sąrašas)
+    + array (sąrašas)
     - object (kompleksiškas duomuo/struktūra)
     - null
     - undefined
