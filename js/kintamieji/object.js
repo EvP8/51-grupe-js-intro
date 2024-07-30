@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 OBJECT - objektas
 key-value porų sąrašas
@@ -114,58 +116,75 @@ C) SABLONAS:
 Prekiu krepselio verte yra TOTAL KAINA Eur.
 */
 
-console.clear
+console.clear();
 
-
-// Prekių sąrašas
-
-const krepselis = [
-    {
-        pavadinimas: 'Duona',
-        kainaUzVieneta: 1.5,
-        kiekis: 2,
+const pc = {
+    monitor: {
+        width: 1980,
+        height: 1080,
     },
-    {
-        pavadinimas: 'Svietas',
-        kainaUzVieneta: 2.2,
-        kiekis: 1,
+    ram: 16,
+    hd: 100,
+    keyboard: 'en',
+    mouse: true,
+    power: false,
+};
+
+const param = 'monitor';
+console.log(pc[param]);
+
+console.log(pc.monitor.width);
+console.log(pc.monitor.height);
+console.log(pc['monitor'].width);
+console.log(pc['monitor'].height);
+console.log(pc['monitor']['width']);
+console.log(pc['monitor']['height']);
+console.log(pc.monitor['width']);
+console.log(pc.monitor['height']);
+
+console.log(pc[param]);
+console.log(pc[param].width);
+console.log(pc[param]['height']);
+
+console.clear();
+
+const crazy = {
+    title: 'Some crazy ... 😎',
+    description: 'Prepare yourself... 🚗',
+    'crazy marks': [10, 2, 8, 4, 6],
+    123: {
+        one: true,
+        two: true,
+        three: true,
     },
-    {
-        pavadinimas: 'Sūris',
-        kainaUzVieneta: 1.7,
-        kiekis: 2,
-    },
-    {
-        pavadinimas: 'Arbata',
-        kainaUzVieneta: 2,
-        kiekis: 3,
-    },
-];
+};
 
-// Prekių kiekio nustatymas
+console.log(crazy);
+console.log(crazy.title);
+console.log(crazy['description']);
+console.log(crazy['crazy marks']);
+console.log(crazy['123']);
+console.log(crazy[123]);
 
-const prekiuSkaicius = krepselis.length;
-console.log('Prekių krepšelyje yra ' + prekiuSkaicius + ' prekių.');
+/*
+string = supaprastingas array
+array = supaprastingas object
+*/
+console.log(crazy.title);
+console.log(crazy.title[0]);
+console.log(crazy.title[1]);
+console.log(crazy.title[2]);
+console.log(crazy.title.length);
 
-// B) Prekių sąrašo rodymas
+console.clear();
 
-console.log('Prekių krepšelis');
-console.log('----------------');
-console.log('1) ' + krepselis[0].pavadinimas + ' (' + krepselis[0].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
-krepselis[0].kiekis);
-console.log('2) ' + krepselis[1].pavadinimas + ' (' + krepselis[1].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
-krepselis[1].kiekis);
-console.log('3) ' + krepselis[2].pavadinimas + ' (' + krepselis[2].kainaUzVieneta.toFixed(2) + ' Eur) - ' +
-krepselis[2].kiekis);
-console.log('4) ' + krepselis[3].pavadinimas + ' (' + krepselis[3].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
-krepselis[3].kiekis);
+const house = {
+    width: 16,
+    height: 3,
+    depth: 5,
+};
 
+const houseKeys = Object.keys(house);
+console.log(houseKeys);
 
-// C) Prekių krepšelis vertės apskaičiavimas
-
-let prekiuKaina = krepselis [0].kainaUzVieneta * krepselis [0].kiekis +
-                  krepselis [1].kainaUzVieneta * krepselis [1].kiekis +
-                  krepselis [2].kainaUzVieneta * krepselis [2].kiekis +
-                  krepselis [3].kainaUzVieneta * krepselis [3].kiekis;
-
-console.log ('Prekių krepšelio vertė yra ' + prekiuKaina.toFixed(2) + 'Eur.');
+console.log(Object.keys({}));
