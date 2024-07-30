@@ -100,7 +100,7 @@ const tekstas3 = "Saulė";
 console.log(tekstas3)
 
 // 3. Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis
-// a. Po kiekvieno jų inicijavimo, išvesti į console
+//    a. Po kiekvieno jų inicijavimo, išvesti į console
 
 console.log("-------------------")
 console.log('Sąrašas, kintamieji skaičiai');
@@ -116,7 +116,7 @@ const numeriuSarasas3 = [111, 222, 333, 444, 555];
 console.log(numeriuSarasas3);
 
 // 4. Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
-// a. Po kiekvieno jų inicijavimo, išvesti į console
+//    a. Po kiekvieno jų inicijavimo, išvesti į console
 
 console.log("-------------------")
 console.log('Sąrašas, kintamieji tekstai');
@@ -130,4 +130,55 @@ console.log(tekstasSarasas2);
 
 const tekstasSarasas3 = ['šimtas vienuolika', 'du šimtai dvydešimt du', 'trys šimtai trisdešimt trys', 'keturi šimtai keturiasdešimt keturi', 'penki šimtai penkiasdešimt penki'];
 console.log(tekstasSarasas3);
+
+// *********************************
+// *   Veiksmai su kintamaisiais    *
+// *********************************
+
+// 1. Susumuoti visus skaičiaus tipo kintamuosius
+//    a.  Rezultatą išvesti į console
+
+console.log("-------------------")
+console.log('Susumuoti visus skaičiaus tipo kintamuosius');
+console.log("-------------------")
+
+const viso = skaicius1 + skaicius2 + skaicius3;
+console.log(viso);
+
+// 2. Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas
+//    a. Rezultatą išvesti į console
+
+console.log("-------------------")
+console.log('Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas');
+console.log("-------------------")
+
+const sujungtasTekstas = tekstas1 + " " + tekstas2 + " " + tekstas3;
+
+console.log(sujungtasTekstas);
+
+// 3. Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką
+//    a. 1-2+3-4+5
+//    b. Rezultatą išvesti į console
+
+console.log("-------------------")
+console.log('Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką') 
+console.log('1-2+3-4+5');
+console.log("-------------------")
+
+const verte1 = numeriuSarasas1[0] - numeriuSarasas1[1] + numeriuSarasas1[2] - numeriuSarasas1[3] + numeriuSarasas1[4]
+console.log(verte1);
+
+const verte2 = numeriuSarasas2[0] - numeriuSarasas2[1] + numeriuSarasas2[2] - numeriuSarasas2[3] + numeriuSarasas2[4]
+console.log(verte2);
+
+const verte3 = numeriuSarasas3[0] - numeriuSarasas3[1] + numeriuSarasas3[2] - numeriuSarasas3[3] + numeriuSarasas3[4]
+console.log(verte3);
+
+//4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
+
+console.log("-------------------")
+console.log(' Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas');
+console.log("-------------------")
+
+
 
