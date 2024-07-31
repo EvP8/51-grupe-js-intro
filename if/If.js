@@ -14,7 +14,7 @@ visi: >, <, >=, <=, ==, !=, ===, !==
 naudotini: >, <, >=, <=, ===, !==
 nenaudotini: ==, !=
 
-ZINOTINI (crazy 👀) DALYKAI:
+ZINOTINI (crazy 🤨) DALYKAI:
 - true yra pozityvus, false yra negatyvus
 - visi skaiciai yra pozityvus, isskyrus nuli (0)
 - visi stringai yra pozityvus, isskyrus tusti ('')
@@ -106,7 +106,7 @@ if (color === colors[0]) {
 }
 
 if (undefined) {
-    console.log('POZITYVAS');
+    console.log('POZITYVAS - truthy');
 } else {
-    console.log('NEGATYVAS');
+    console.log('NEGATYVAS - falsy');
 }

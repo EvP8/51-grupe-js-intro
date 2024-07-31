@@ -27,7 +27,7 @@ salygos/palyginimo (if):
     + boolean logika
     + if
     - switch
-    - ternary
+    + ternary
 ciklai (for):
     - for
     - for-of
