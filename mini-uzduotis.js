@@ -9,12 +9,6 @@ console.log('------------------')
 
 // Prekių sąrašas
 
-
-console.log("-------------------");
-console.log('Prekių sąrašas ir sumos skaičiavimas');
-console.log('------------------');
-
-// Prekių sąrašas
 const krepselis = [
     {
         pavadinimas: 'Duona',
@@ -39,37 +33,53 @@ const krepselis = [
 ];
 
 // Prekių kiekio nustatymas
+
 const prekiuSkaicius = krepselis.length;
 console.log('Prekių krepšelyje yra ' + prekiuSkaicius + ' prekių.');
 
 // B) Prekių sąrašo rodymas
+
 console.log('Prekių krepšelis');
 console.log('----------------');
-console.log('1) ' + krepselis[0].pavadinimas + ' (' + krepselis[0].kainaUzVieneta.toFixed(2) + ' Eur) - ' + krepselis[0].kiekis);
-console.log('2) ' + krepselis[1].pavadinimas + ' (' + krepselis[1].kainaUzVieneta.toFixed(2) + ' Eur) - ' + krepselis[1].kiekis);
-console.log('3) ' + krepselis[2].pavadinimas + ' (' + krepselis[2].kainaUzVieneta.toFixed(2) + ' Eur) - ' + krepselis[2].kiekis);
-console.log('4) ' + krepselis[3].pavadinimas + ' (' + krepselis[3].kainaUzVieneta.toFixed(2) + ' Eur) - ' + krepselis[3].kiekis);
+console.log('1) ' + krepselis[0].pavadinimas + ' (' + krepselis[0].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
+krepselis[0].kiekis);
+console.log('2) ' + krepselis[1].pavadinimas + ' (' + krepselis[1].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
+krepselis[1].kiekis);
+console.log('3) ' + krepselis[2].pavadinimas + ' (' + krepselis[2].kainaUzVieneta.toFixed(2) + ' Eur) - ' +
+krepselis[2].kiekis);
+console.log('4) ' + krepselis[3].pavadinimas + ' (' + krepselis[3].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
+krepselis[3].kiekis);
+
 
 // C) Prekių krepšelis vertės apskaičiavimas
-let prekiuKaina = krepselis[0].kainaUzVieneta * krepselis[0].kiekis +
-                  krepselis[1].kainaUzVieneta * krepselis[1].kiekis +
-                  krepselis[2].kainaUzVieneta * krepselis[2].kiekis +
-                  krepselis[3].kainaUzVieneta * krepselis[3].kiekis;
 
-console.log('Prekių krepšelio vertė yra ' + prekiuKaina.toFixed(2) + ' Eur.');
+let prekiuKaina = krepselis [0].kainaUzVieneta * krepselis [0].kiekis +
+                  krepselis [1].kainaUzVieneta * krepselis [1].kiekis +
+                  krepselis [2].kainaUzVieneta * krepselis [2].kiekis +
+                  krepselis [3].kainaUzVieneta * krepselis [3].kiekis;
+
+console.log ('Prekių krepšelio vertė yra ' + prekiuKaina.toFixed(2) + 'Eur.');
 
 console.log('----------------');
-
 
 // *********************************
 // *   JavaScript mini užduotys    *
 // *********************************
+
+console.log("");
+console.log("-------------------")
+console.log('*********************************');
+console.log('*   JavaScript mini užduotys    *');
+console.log('*********************************');
+console.log("-------------------")
 
 // Kintamųjų inicijavimas
 
 // 1.  Sukurti 3 kintamuosius su skaičiaus tipo reikšmėmis   
 //     a. Po kiekvieno jų inicijavimo, išvesti į console
 
+console.log("");
+console.log("-------------------")
 console.log('Kintamieji skaičiaus tipo reikšmės');
 console.log("-------------------")
 
@@ -175,9 +185,148 @@ console.log(verte3);
 
 //4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 
+console.log(" ");
 console.log("-------------------")
 console.log(' Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas');
 console.log("-------------------")
 
+console.log("");
+const sujTek1 = tekstasSarasas1[4] + ', ' + tekstasSarasas1[3] + ', ' + tekstasSarasas1[2] + ', ' + tekstasSarasas1[1] + ', ' + tekstasSarasas1[0];
+console.log(sujTek1);
 
+console.log("");
+const sujTek2 = tekstasSarasas2[4] + ', ' + tekstasSarasas2[3] + ', ' + tekstasSarasas2[2] + ', ' + tekstasSarasas2[1] + ', ' + tekstasSarasas2[0];
+console.log(sujTek2);
+
+console.log("");
+const sujTek3 = tekstasSarasas3[4] + ', ' + tekstasSarasas3[3] + ', ' + tekstasSarasas3[2] + ', ' + tekstasSarasas3[1] + ', ' + tekstasSarasas3[0];
+console.log(sujTek3);
+
+console.log("-------------------")
+
+// *********************************
+// *     Kintamųjų palyginimas     *
+// *********************************
+
+console.log(" ")
+console.log("-------------------")
+console.log('Kintamųjų palyginimas');
+console.log("-------------------")
+
+//Priklausomai nuo sąlygos, susikurkite 2 skirtingų reikšmių nurodyto tipo kintamuosius.
+//Lyginant, jei rezultatas tenkina palyginimo sąlygą (nurodytą žemiau), tai į console išvesti žodį “Pomidoras”, o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
+
+// 1. Tarpusavyje palyginti skaičiaus tipo kintamuosius:
+//    a. kuris didesnis
+//    b. kuris mažesnis
+//    c. ar jie lygūs
+//    d. ar jie nelygūs
+//    e. kuris didesnis arba lygus
+//    f. kuris mažesnis arba lygus  
+
+console.log(" ")
+console.log("-------------------")
+console.log('1. Tarpusavyje palyginti skaičiaus tipo kintamuosius:');
+console.log("-------------------")
+
+const taip = 8;
+const  ne  = 4;
+
+if (8 > 4) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (8 < 4) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (8 === 4) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (8 !== 4) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (8 >= 4) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (8 <= 4) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+// 2. Išvesti teksto tipo kintamųjų ilgius
+
+console.log(" ")
+console.log("-------------------")
+console.log('2. Išvesti teksto tipo kintamųjų ilgius');
+console.log("-------------------")
+
+const name    = 'Vardenis';
+const surname = "Pavardenis";
+
+console.log(name.length);
+console.log(surname.length);
+
+// 3. Tarpusavyje palyginti teksto tipo kintamųjų ilgius:
+//    a. kuris didesnis
+//    b. kuris mažesnis
+//    c. ar jie lygūs
+//    d. ar jie nelygūs
+//    e. kuris didesnis arba lygus
+//    f. kuris mažesnis arba lygus
+
+console.log(" ")
+console.log("-------------------")
+console.log('3. Tarpusavyje palyginti teksto tipo kintamųjų ilgius:');
+console.log("-------------------")
+
+if (name > surname) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (name < surname) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (name === surname) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (name !== surname) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (name >= surname) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
+
+if (name <= surname) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar karta');
+}
 
