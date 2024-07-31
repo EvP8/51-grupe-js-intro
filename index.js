@@ -41,6 +41,7 @@ ciklai (for):
         - reduce
         - foreach
         - N+1...
+import-export
 function:
     - "iprastos" deklaruotinos
     - anonimines (priskirtos kintamajam)

@@ -4,6 +4,7 @@ STRING - tekstas, simboliu grandinele
 String iniciavimo simboliai:
     - ' (vienguba kabute)
     - " (dviguba kabute)
+    - ` (backtick)
 
 Operatoriai:
 + sujungia string'us
@@ -157,3 +158,10 @@ console.log('------------------');
 const abbr = personName[0] + '.' + personSurname[0] + '.';
 
 console.log(abbr);
+
+
+const userName = 'Jonas';
+const userSurname = 'Jonaitis';
+
+const abbr2 = `${userName[0]}.${userSurname[0]}.`;
+console.log(abbr2);

@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+      "function": "node --watch ./js/kintamieji/function.js",
       "ternary": "node --watch ./js/kintamieji/ternary.js",
       "nd": "node --watch ./js/kintamieji/nd.js",
       "if": "node --watch ./js/kintamieji/if.js",
