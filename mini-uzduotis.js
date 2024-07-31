@@ -3,9 +3,9 @@
 // *********************************
 
 "use strict";
-console.log("-------------------")
+console.log("-------------------");
 console.log('Prekių sąrašas ir sumos skaičiavimas');
-console.log('------------------')
+console.log('------------------');
 
 // Prekių sąrašas
 
@@ -67,11 +67,11 @@ console.log('----------------');
 // *********************************
 
 console.log("");
-console.log("-------------------")
+console.log("-------------------");
 console.log('*********************************');
 console.log('*   JavaScript mini užduotys    *');
 console.log('*********************************');
-console.log("-------------------")
+console.log("-------------------");
 
 // Kintamųjų inicijavimas
 
@@ -79,9 +79,9 @@ console.log("-------------------")
 //     a. Po kiekvieno jų inicijavimo, išvesti į console
 
 console.log("");
-console.log("-------------------")
+console.log("-------------------");
 console.log('Kintamieji skaičiaus tipo reikšmės');
-console.log("-------------------")
+console.log("-------------------");
 
 const skaicius1 = 8;
 console.log(skaicius1);
@@ -95,9 +95,9 @@ console.log(skaicius3);
 // 2. Sukurti 3 kintamuosius su teksto tipo reikšmėmis
 //    a. Po kiekvieno jų inicijavimo, išvesti į console
 
-console.log("-------------------")
+console.log("-------------------");
 console.log('Kintamieji skaičiaus tipo reikšmės');
-console.log("-------------------")
+console.log("-------------------");
 
 const tekstas1 = "Pagaliau";
 console.log(tekstas1);
@@ -111,9 +111,9 @@ console.log(tekstas3)
 // 3. Sukurti 3 sąrašo tipo kintamuosius su penkiomis skaičių tipo reikšmėmis
 //    a. Po kiekvieno jų inicijavimo, išvesti į console
 
-console.log("-------------------")
+console.log("-------------------");
 console.log('Sąrašas, kintamieji skaičiai');
-console.log("-------------------")
+console.log("-------------------");
 
 const numeriuSarasas1 = [1, 2, 3, 4, 5];
 console.log(numeriuSarasas1);
@@ -127,9 +127,9 @@ console.log(numeriuSarasas3);
 // 4. Sukurti 3 sąrašo tipo kintamuosius su penkiomis teksto tipo reikšmėmis
 //    a. Po kiekvieno jų inicijavimo, išvesti į console
 
-console.log("-------------------")
+console.log("-------------------");
 console.log('Sąrašas, kintamieji tekstai');
-console.log("-------------------")
+console.log("-------------------");
 
 const tekstasSarasas1 = ['vienas', 'du', 'trys', 'keturi', 'penki'];
 console.log(tekstasSarasas1);
@@ -147,9 +147,9 @@ console.log(tekstasSarasas3);
 // 1. Susumuoti visus skaičiaus tipo kintamuosius
 //    a.  Rezultatą išvesti į console
 
-console.log("-------------------")
+console.log("-------------------");
 console.log('Susumuoti visus skaičiaus tipo kintamuosius');
-console.log("-------------------")
+console.log("-------------------");
 
 const viso = skaicius1 + skaicius2 + skaicius3;
 console.log(viso);
@@ -157,9 +157,9 @@ console.log(viso);
 // 2. Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas
 //    a. Rezultatą išvesti į console
 
-console.log("-------------------")
+console.log("-------------------");
 console.log('Sujungti visus teksto tipo kintamuosius taip, jog tarp jų būtų sudarytas tarpas');
-console.log("-------------------")
+console.log("-------------------");
 
 const sujungtasTekstas = tekstas1 + " " + tekstas2 + " " + tekstas3;
 
@@ -169,10 +169,10 @@ console.log(sujungtasTekstas);
 //    a. 1-2+3-4+5
 //    b. Rezultatą išvesti į console
 
-console.log("-------------------")
+console.log("-------------------");
 console.log('Apskaičiuoti vertę iš sąrašų kurių verčių tipas yra skaičiai, pagal pateiktą logiką') 
 console.log('1-2+3-4+5');
-console.log("-------------------")
+console.log("-------------------");
 
 const verte1 = numeriuSarasas1[0] - numeriuSarasas1[1] + numeriuSarasas1[2] - numeriuSarasas1[3] + numeriuSarasas1[4]
 console.log(verte1);
@@ -186,9 +186,9 @@ console.log(verte3);
 //4. Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas
 
 console.log(" ");
-console.log("-------------------")
+console.log("-------------------");
 console.log(' Sujungti sąrašų vertes, kurių tipas yra tekstai, nuo sąrašo galo iki pradžios taip, jog tarp jų būtų kablelis ir tarpas');
-console.log("-------------------")
+console.log("-------------------");
 
 console.log("");
 const sujTek1 = tekstasSarasas1[4] + ', ' + tekstasSarasas1[3] + ', ' + tekstasSarasas1[2] + ', ' + tekstasSarasas1[1] + ', ' + tekstasSarasas1[0];
@@ -202,16 +202,16 @@ console.log("");
 const sujTek3 = tekstasSarasas3[4] + ', ' + tekstasSarasas3[3] + ', ' + tekstasSarasas3[2] + ', ' + tekstasSarasas3[1] + ', ' + tekstasSarasas3[0];
 console.log(sujTek3);
 
-console.log("-------------------")
+console.log("-------------------");
 
 // *********************************
 // *     Kintamųjų palyginimas     *
 // *********************************
 
 console.log(" ")
-console.log("-------------------")
+console.log("-------------------");
 console.log('Kintamųjų palyginimas');
-console.log("-------------------")
+console.log("-------------------");
 
 //Priklausomai nuo sąlygos, susikurkite 2 skirtingų reikšmių nurodyto tipo kintamuosius.
 //Lyginant, jei rezultatas tenkina palyginimo sąlygą (nurodytą žemiau), tai į console išvesti žodį “Pomidoras”, o jei sąlyga nėra tenkinama, išvesti sakinį “Bandykite kitą kartą.”.
@@ -225,9 +225,9 @@ console.log("-------------------")
 //    f. kuris mažesnis arba lygus  
 
 console.log(" ")
-console.log("-------------------")
+console.log("-------------------");
 console.log('1. Tarpusavyje palyginti skaičiaus tipo kintamuosius:');
-console.log("-------------------")
+console.log("-------------------");
 
 const taip = 8;
 const  ne  = 4;
@@ -271,9 +271,9 @@ if (8 <= 4) {
 // 2. Išvesti teksto tipo kintamųjų ilgius
 
 console.log(" ")
-console.log("-------------------")
+console.log("-------------------");
 console.log('2. Išvesti teksto tipo kintamųjų ilgius');
-console.log("-------------------")
+console.log("-------------------");
 
 const name    = 'Vardenis';
 const surname = "Pavardenis";
@@ -289,10 +289,10 @@ console.log(surname.length);
 //    e. kuris didesnis arba lygus
 //    f. kuris mažesnis arba lygus
 
-console.log(" ")
-console.log("-------------------")
+console.log(" ");
+console.log("-------------------");
 console.log('3. Tarpusavyje palyginti teksto tipo kintamųjų ilgius:');
-console.log("-------------------")
+console.log("-------------------");
 
 if (name > surname) {
     console.log('Pomidoras');
@@ -330,3 +330,66 @@ if (name <= surname) {
     console.log('Bandykite dar karta');
 }
 
+// 4. Išvesti sąrašo tipo kintamųjų ilgius
+
+console.log(" ");
+console.log("-------------------");
+console.log('4. Išvesti sąrašo tipo kintamųjų ilgius');
+console.log("-------------------");
+
+const marks = [8, 6 ,3 ,7, 2, 5];
+const count = marks.length;
+console.log('Kiekis', count);
+
+const marks2 = [1, 4 ,8 ,0, 7, 5,];
+const count2 = marks2.length;
+console.log('Kiekis', count2);
+
+//5. Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:
+//   a. kuris didesnis
+//   b. kuris mažesnis
+//   c. ar jie lygūs
+//   d. ar jie nelygūs
+//   e. kuris didesnis arba lygus
+//   f. kuris mažesnis arba lygus
+
+console.log(" ");
+console.log("-------------------");
+console.log('5. Tarpusavyje palyginti sąrašo tipo kintamųjų ilgius:');
+console.log("-------------------");
+
+if (marks > marks2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kart');
+}
+
+if (marks < marks2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kart');
+}
+
+if (marks === marks2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kart');
+}
+
+if (marks !== marks2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kart');
+}
+
+if (marks >= marks2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kart');
+}
+
+if (marks <= marks2) {
+    console.log('Pomidoras');
+} else {
+    console.log('Bandykite dar kart');
+}

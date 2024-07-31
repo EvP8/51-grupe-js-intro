@@ -217,8 +217,8 @@ console.log(crazy['123']);
 console.log(crazy[123]);
 
 /*
-string = supaprastingas array
-array = supaprastingas object
+string = supaprastintas array
+array = supaprastintas object
 */
 console.log(crazy.title);
 console.log(crazy.title[0]);
