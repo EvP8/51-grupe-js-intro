@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+
+      "for": "node --watch ./js/ciklas/for.js",
       "mini": "node ./mini-uzduotis.js",
       "function": "node --watch ./js/function/function.js",
       "ternary": "node --watch ./js/if/ternary.js",

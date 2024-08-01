@@ -266,4 +266,4 @@ console.log(marks[0]);
 
 marks[1] = 10;
 console.log(marks);
-console.log(marks[1]);
+console.log(marks[1])
