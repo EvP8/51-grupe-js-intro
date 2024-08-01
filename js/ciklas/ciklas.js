@@ -30,9 +30,17 @@ for (let i = 0; i < dict.length; i++) {
 
 console.clear();
 
+function arTesti(index) {
+    if (index > 35) {
+        return false;
+    }
+
+    return true;
+}
+
 let j = 20;
 
-for (; j < 30;) {
+for (; arTesti(j);) {
     if (j < 25) {
         console.log('--', j);
     } else {
@@ -40,4 +48,19 @@ for (; j < 30;) {
     }
 
     j++;
+}
+
+console.clear();
+
+//           i: 0  1  2  3  4
+const marks = [10, 2, 8, 4, 6, 777];
+let sum = 0;
+
+for (let i = 0; i < marks.length; i++) {
+    console.log(i, '-->', marks[i]);
+    sum += marks[i];
+}
+
+for (let i = marks.length - 1; i >= 0; i--) {
+    console.log('>>>', marks[i]);
 }

@@ -29,7 +29,7 @@ salygos/palyginimo (if):
     - switch
     + ternary
 ciklai (for):
-    - for
+    + for
     - for-of
     - for-in
     - while
