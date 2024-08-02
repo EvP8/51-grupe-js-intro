@@ -141,7 +141,7 @@ const tekstasSarasas3 = ['šimtas vienuolika', 'du šimtai dvydešimt du', 'trys
 console.log(tekstasSarasas3);
 
 // *********************************
-// *   Veiksmai su kintamaisiais    *
+// *   Veiksmai su kintamaisiais   *
 // *********************************
 
 // 1. Susumuoti visus skaičiaus tipo kintamuosius
@@ -393,3 +393,93 @@ if (marks <= marks2) {
 } else {
     console.log('Bandykite dar kart');
 }
+
+/* *********************************
+   *   Ciklo for panaudojimas  *
+   ********************************* */
+
+/* 1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai):
+      a. 0...0
+      b. 0...4
+      c. 0...100
+      d. 574...815
+      e. -50...50
+      f. -70...30 */
+
+console.log(" ");
+console.log("-------------------");
+console.log('Ciklo for panaudojimas');
+console.log("-------------------");
+
+console.log("-------------------");
+console.log('1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai)');
+console.log('a. 0...0');
+console.log("-------------------");
+
+/* a. 0...0 */
+
+let suma = 0;
+for (let i = 0; i <= 0; i++) {
+    suma += i;
+}
+console.log(suma)
+
+console.log("-------------------");
+console.log('b. 0...4');
+
+/* b. 0...4 */
+
+for (let i = 0; i <= 4; i++) {
+    suma += i;
+}
+console.log(suma)
+
+/* c. 0...100 */ 
+
+console.log("-------------------");
+console.log('c. 0...100');
+
+for (let i = 0; i <= 100; i++) {
+    suma += i;
+}
+console.log(suma)
+
+/* d. 574...815 */ 
+
+console.log("-------------------");
+console.log('c. 574...815');
+
+for (let i = 0; i <= 100; i++) {
+    suma += i;
+}
+console.log(suma)
+
+/* e. -50...50 */ 
+
+console.log("-------------------");
+console.log('e. -50...50');
+
+for (let i = -50; i <= 50; i++) {
+    suma += i;
+}
+console.log(suma)
+
+/* e. -70 … 30 */ 
+
+console.log("-------------------");
+console.log('e. -70 … 30');
+
+for (let i = -70; i <= 30; i++) {
+    suma += i;
+}
+console.log(suma)
+
+/* 2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo
+      a. pvz.:"abcdef" -> "fedcba" */
+
+console.log("-------------------");
+console.log('2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo');
+console.log('a. pvz.:"abcdef" -> "fedcba"');
+console.log("-------------------");
+
+
