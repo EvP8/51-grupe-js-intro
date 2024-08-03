@@ -482,4 +482,96 @@ console.log('2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšm
 console.log('a. pvz.:"abcdef" -> "fedcba"');
 console.log("-------------------");
 
+let ciklasTekstas = "abcdef"
+let tekstasCiklas =  '';
 
+for (let i = ciklasTekstas.length - 1; i >= 0; i--) {
+    tekstasCiklas += ciklasTekstas[i];
+}
+
+console.log(tekstasCiklas);
+ 
+/* 3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai: 
+      a. 0 - 11
+      b. 8 - 31
+      c. -18 - 18
+      d. rezultatą pateikti tokiu formatu: 
+           i. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.*/
+           
+console.log("");
+console.log("-------------------");
+console.log('2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo');
+console.log('a. 0 - 11');
+console.log("-------------------");
+
+let dalijasiIs3 = 0;
+let dalijasiIs5 = 0;
+let dalijasiIs7 = 0;
+
+for (let i = 0; i <= 11; i++) {
+    if (i % 3 === 0) {
+        dalijasiIs3++;
+    }
+
+    if (i % 5 === 0) {
+        dalijasiIs5++;
+    }
+    
+    if (i % 7 === 0) {
+        dalijasiIs7++;
+    }
+}
+
+console.log(`Dalijasi iš 3: ${dalijasiIs3}`);
+console.log(`Dalijasi iš 5: ${dalijasiIs5}`);
+console.log(`Dalijasi iš 7: ${dalijasiIs7}`);
+
+console.log("");
+console.log("-------------------");
+console.log('b. 8 - 31');
+console.log("-------------------");
+
+/*let*/ dalijasiIs3 = 0;
+/*let*/ dalijasiIs5 = 0;
+/*let*/ dalijasiIs7 = 0;
+
+for (let i = 8; i <= 31; i++) {
+    if (i % 3 === 0) {
+        dalijasiIs3++;
+    }
+
+    if (i % 5 === 0) {
+        dalijasiIs5++;
+    }
+
+    if (i % 7 === 0) {
+        dalijasiIs7++;
+    }
+}
+    console.log (`Dalinasi iš 3: ${dalijasiIs3}`)
+    console.log (`Dalijasi iš 5: ${dalijasiIs5}`)
+    console.log (`Dalijasi iš 7: ${dalijasiIs7}`)
+
+    console.log("");
+    console.log("-------------------");
+    console.log('c. -18 - 18');
+    console.log("-------------------");
+
+/*let*/ dalijasiIs3 = 0;
+/*let*/ dalijasiIs5 = 0;
+/*let*/ dalijasiIs7 = 0;
+
+for (let i = -18; i <= -18; i++) {
+    if ( i % 3 === 0) {
+        dalijasiIs3++;
+    }
+    if (i % 5 === 0) {
+        dalijasiIs5++;
+    }
+    if (i % 7 === 0) {
+        dalijasiIs7++;    }
+}
+
+    console.log (`Dalijasi iš 3: ${dalijasiIs3}`)
+    console.log (`Dalijasi iš 5: ${dalijasiIs5}`)
+    console.log (`Dalijasi iš 7: ${dalijasiIs7}`)
