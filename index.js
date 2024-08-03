@@ -43,7 +43,7 @@ ciklai (for):
         - N+1...
 import-export
 function:
-    - "iprastos" deklaruotinos
+    + "iprastos" deklaruotinos
     - anonimines (priskirtos kintamajam)
     - rodyklines (arrow)
 class (oop):
