@@ -414,65 +414,29 @@ console.log("-------------------");
 console.log("-------------------");
 console.log('1. Suskaičiuoti ką gausime susumavus skaičius intervale tarp (imtinai)');
 console.log('a. 0...0');
+console.log('a. 0...4');
+console.log('a. 574...815');
+console.log('a. -50...50');
+console.log('a. -70...30');
 console.log("-------------------");
 
-/* a. 0...0 */
 
-let suma = 0;
-for (let i = 0; i <= 0; i++) {
-    suma += i;
+
+
+function rangeSum(start, end) {
+    let sum = 0;
+    for (let i = start; i <= end; i++) {
+        sum += i;
+    }
+    return sum;
 }
-console.log(suma)
 
-console.log("-------------------");
-console.log('b. 0...4');
-
-/* b. 0...4 */
-
-for (let i = 0; i <= 4; i++) {
-    suma += i;
-}
-console.log(suma)
-
-/* c. 0...100 */ 
-
-console.log("-------------------");
-console.log('c. 0...100');
-
-for (let i = 0; i <= 100; i++) {
-    suma += i;
-}
-console.log(suma)
-
-/* d. 574...815 */ 
-
-console.log("-------------------");
-console.log('c. 574...815');
-
-for (let i = 0; i <= 100; i++) {
-    suma += i;
-}
-console.log(suma)
-
-/* e. -50...50 */ 
-
-console.log("-------------------");
-console.log('e. -50...50');
-
-for (let i = -50; i <= 50; i++) {
-    suma += i;
-}
-console.log(suma)
-
-/* e. -70 … 30 */ 
-
-console.log("-------------------");
-console.log('e. -70 … 30');
-
-for (let i = -70; i <= 30; i++) {
-    suma += i;
-}
-console.log(suma)
+console.log(rangeSum(0, 0), '-->', 0);       
+console.log(rangeSum(0, 4), '-->', 10);      
+console.log(rangeSum(0, 100), '-->', 5050);    
+console.log(rangeSum(574, 815), '-->', 168069);   
+console.log(rangeSum(-50, 50), '-->', 0);    
+console.log(rangeSum(-70, 30), '-->', -2020);
 
 /* 2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo
       a. pvz.:"abcdef" -> "fedcba" */
@@ -482,14 +446,16 @@ console.log('2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšm
 console.log('a. pvz.:"abcdef" -> "fedcba"');
 console.log("-------------------");
 
-let ciklasTekstas = "abcdef"
-let tekstasCiklas =  '';
-
-for (let i = ciklasTekstas.length - 1; i >= 0; i--) {
-    tekstasCiklas += ciklasTekstas[i];
+function stringReverse(str) {
+    let reversedString ='';
+    for (let i = str.length - 1; i >= 0; i--) {
+        reversedString = str[i] + reversedString;
+    }
+    return reversedString;
 }
+console.log(stringReverse(''));
+console.log(stringReverse('abcdef'), '-->', 'fedcba');
 
-console.log(tekstasCiklas);
  
 /* 3. Suskaičiuoti, kiek nurodytame intervale yra skaičių, kurie dalijasi be liekanos iš 3, 5 ir 7 atskirai: 
       a. 0 - 11
@@ -500,7 +466,7 @@ console.log(tekstasCiklas);
            
 console.log("");
 console.log("-------------------");
-console.log('2. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo');
+console.log('3. Panaudojant ciklą perrašyti tekstinio tipo kintamųjų reikšmes iš kito galo');
 console.log('a. 0 - 11');
 console.log("-------------------");
 
@@ -575,3 +541,15 @@ for (let i = -18; i <= -18; i++) {
     console.log (`Dalijasi iš 3: ${dalijasiIs3}`)
     console.log (`Dalijasi iš 5: ${dalijasiIs5}`)
     console.log (`Dalijasi iš 7: ${dalijasiIs7}`)
+
+/* d. rezultatą pateikti tokiu formatu:
+            i. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.
+            ii. Skaičių internavale tarp 0 ir 11, besidalijančių be liekanos 5 yra 3 vienetai.
+            iii. skaičių intervale tarp 0 ir 11, besidalijančių be liekanos 7 yra 2 vienetai. */
+
+    console.log("");
+console.log("-------------------");
+console.log('d. rezultatą pateikti tokiu formatu:');
+console.log('i. Skaičių intervale tarp 0 ir 11, besidalijančių be liekanos iš 3 yra 4 vienetai.');
+console.log("-------------------");
+
