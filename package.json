@@ -5,10 +5,9 @@
   "type":"module" ,
   "main": "index.js",
   "scripts": {
-      "cwt": "node --watch ./CodeWars/cw-test.js",
+      "method:number": "node --watch ./js/method/number.js",
       "uzd:string": "node --watch ./uzd/string-reverse.js",
       "uzd:suma": "node --watch ./uzd/suma-intervale.js",
-      "mini": "node --watch ./mini-uzduotis.js",
       "typeof": "node --watch ./js/if/typeof.js",
       "import": "node --watch ./js/function/import.js",
       "while": "node --watch ./js/ciklas/while.js",
@@ -25,6 +24,8 @@
       "boolean": "node --watch ./js/kintamieji/boolean.js",
       "string": "node --watch ./js/kintamieji/string.js",
       "number": "node --watch ./js/kintamieji/number.js",
+      "mini": "node --watch ./mini-uzduotis.js",
+      "cwt": "node --watch ./CodeWars/cw-test.js",
       "dev": "node ./index.js",
       "test": "echo \"Error: no test specified\" && exit 1"
   },
