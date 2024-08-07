@@ -30,9 +30,9 @@ salygos/palyginimo (if):
     + ternary
 ciklai (for):
     + for
-    - for-of
-    - for-in
-    - while
+    + for-of
+    + for-in
+    + while
     - do-while
     - cikliski metodai:
         - map

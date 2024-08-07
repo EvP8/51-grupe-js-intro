@@ -5,6 +5,7 @@
   "type":"module" ,
   "main": "index.js",
   "scripts": {
+      "cwt": "node --watch ./CodeWars/cw-test.js",
       "uzd:string": "node --watch ./uzd/string-reverse.js",
       "uzd:suma": "node --watch ./uzd/suma-intervale.js",
       "mini": "node --watch ./mini-uzduotis.js",
@@ -13,7 +14,8 @@
       "while": "node --watch ./js/ciklas/while.js",
       "for-in": "node --watch ./js/ciklas/for-in.js",
       "for-of": "node --watch ./js/ciklas/for-of.js",
-      "for": "node --watch ./js/ciklas/for.js",     
+      "for": "node --watch ./js/ciklas/for.js",   
+      "arrow": "node --watch ./js/function/arrow.js",  
       "function": "node --watch ./js/function/function.js",
       "ternary": "node --watch ./js/if/ternary.js",
       "if": "node --watch ./js/if/if.js",

@@ -40,10 +40,18 @@ function rangeSum(start, end) {
     } else if (start < 0 && end > 0) {
         sum = end * (end + 1) / 2;
         sum += start * (start - 1) / 2;
+    } else if (start > 0) {
+        console.log('kazkur yra klaida');
+
+        sum = end * (end + 1) / 2;
+        sum -= (start - 1) * ((start - 1) - 1) / 2;
+    } else if (end < 0) {
+        console.log('kazkur yra klaida');
+
+        sum = start * (start + 1) / 2;
+        sum -= (end + 1) * ((end + 1) + 1) / 2;
     } else {
-        for (let i = start; i <= end; i++) {
-            sum += i;
-        }
+        sum = 'ERROR';
     }
 
     // 3. logikoje gauto rezultato validavimas
@@ -132,5 +140,23 @@ console.log(rangeSum(-100_000, 0), '-->', -5000050000);
 console.log(rangeSum(-100_000_000, 0), '-->', -5000000050000000);
 console.log(rangeSum(-1_000_000_000, 0), '-->', -500000000500000000);
 console.log(rangeSum(-10_000_000_000, 0), '-->', -50000000005000000000);
+
+console.log(rangeSum(5, 10));
+console.log(rangeSum(5, 100));
+console.log(rangeSum(5, 1000));
+console.log(rangeSum(5, 10_000));
+console.log(rangeSum(5, 100_000));
+console.log(rangeSum(5, 100_000_000));
+console.log(rangeSum(5, 1_000_000_000));
+console.log(rangeSum(5, 10_000_000_000));
+
+console.log(rangeSum(-10, -5));
+console.log(rangeSum(-100, -5));
+console.log(rangeSum(-1000, -5));
+console.log(rangeSum(-10_000, -5));
+console.log(rangeSum(-100_000, -5));
+console.log(rangeSum(-100_000_000, -5));
+console.log(rangeSum(-1_000_000_000, -5));
+console.log(rangeSum(-10_000_000_000, -5));
 
 // CPU -> 1 core -> 3GHz -> 3mljrd -> 10mljrd -> 3s
