@@ -191,3 +191,145 @@ console.log('Labas'.repeat(3));
 console.log(repeatText('Labas', 3));
 console.log('Labas'.repeat(10));
 console.log(repeatText('Labas', 10));
+
+console.log(String.prototype.replace);
+console.log('Aaaaaaa'.replace('aa', '---'));
+console.log('Aaaaaaa'.replace('aaa', '---'));
+console.log('Aaaaaaa'.replace('aaaa', '---'));
+console.log('Aaaaaaa'.replace('aaaaa', '---'));
+console.log('Aaaaaaa'.replace('aaaaaa', '---'));
+console.log('Aaaaaaa'.replace('aaaaaaa', '---'));
+
+let summer = 'Vasara';
+console.log(summer);
+
+summer = summer.replace('a', '-');
+console.log(summer);
+
+console.log(summer.replace('a', '-'));
+console.log(summer);
+
+let bananas = 'Bananas';
+console.log(bananas);
+
+bananas = bananas.replace('a', '-');
+console.log(bananas);
+
+bananas = bananas.replace('a', '-');
+console.log(bananas);
+
+bananas = bananas.replace('a', '-');
+console.log(bananas);
+
+let pavasaris = 'pavasaris';
+console.log(pavasaris);
+
+pavasaris = pavasaris.replaceAll('a', '*');
+console.log(pavasaris);
+
+console.clear();
+console.log(String.prototype.slice);
+
+console.log('pomidoras'.slice());
+console.log('pomidoras'.slice(0));
+console.log('pomidoras'.slice(1));
+console.log('pomidoras'.slice(2));
+console.log('pomidoras'.slice(3));
+console.log('pomidoras'.slice(4));
+console.log('pomidoras'.slice(-1));
+console.log('pomidoras'.slice(-2));
+console.log('pomidoras'.slice(-3));
+console.log('pomidoras'.slice(-4));
+console.log('---------');
+console.log('pomidoras'.slice(0, 0));
+console.log('pomidoras'.slice(0, 1));
+console.log('pomidoras'.slice(0, 4));
+console.log('pomidoras'.slice(2, 4));
+console.log('pomidoras'.slice(2, 6));
+console.log('pomidoras'.slice(0, -1));
+console.log('pomidoras'.slice(0, -2));
+console.log('pomidoras'.slice(0, -3));
+console.log('pomidoras'.slice(0, -4));
+console.log('pomidoras'.slice(1, -3));
+console.log('pomidoras'.slice(2, -3));
+console.log('pomidoras'.slice(3, -2));
+
+console.clear();
+
+console.log(String.prototype.split);
+console.log('labas'.split('a'));
+console.log('labas'.split('b'));
+console.log('bananas'.split('a'));
+console.log('bananas'.split('ana'));
+console.log('bananas'.split('an'));
+console.log('bananas'.split('bana'));
+console.log('bananas'.split('nas'));
+console.log('bananas'.split('bananas'));
+console.log('bananas'.split('x'));
+console.log('bananas'.split(''));
+
+console.log('bananas'.split('')[3]);
+console.log('bananas'[3]);
+
+const str = 'Labas rytas Lietuva';
+const dict = str.split(' ');
+console.log(dict);
+console.log('Zodziu kiekis:', dict.length);
+
+console.log(String.prototype.toLowerCase);
+console.log(String.prototype.toUpperCase);
+
+console.log('Labas'.toLowerCase());
+console.log('Labas'.toUpperCase());
+console.log('Labas'.toLocaleLowerCase());
+console.log('Labas'.toLocaleUpperCase());
+
+function isUpperCaseWord(str) {
+    if (str[0] === str[0].toUpperCase()) {
+        return true;
+    }
+
+    return false;
+}
+
+console.log(isUpperCaseWord('labas'));
+console.log(isUpperCaseWord('Labas'));
+
+function isLowerCaseWord(str) {
+    if (str[0] === str[0].toLowerCase()) {
+        return true;
+    }
+
+    return false;
+}
+
+console.log(isLowerCaseWord('labas'));
+console.log(isLowerCaseWord('Labas'));
+
+console.log(String.prototype.trim);
+console.log(String.prototype.trimStart);
+console.log(String.prototype.trimEnd);
+
+console.log(`"${'pavasaris'.trim()}"`);
+console.log(`"${'pavasaris'.trimStart()}"`);
+console.log(`"${'pavasaris'.trimEnd()}"`);
+
+console.log(`"${'pavasaris siltas'.trim()}"`);
+console.log(`"${'pavasaris siltas'.trimStart()}"`);
+console.log(`"${'pavasaris siltas'.trimEnd()}"`);
+
+console.log(`"${'pavasaris mano kieme        '.trim()}"`);
+console.log(`"${'pavasaris mano kieme        '.trimStart()}"`);
+console.log(`"${'pavasaris mano kieme        '.trimEnd()}"`);
+
+console.log(`"${'        pavasaris mano kieme'.trim()}"`);
+console.log(`"${'        pavasaris mano kieme'.trimStart()}"`);
+console.log(`"${'        pavasaris mano kieme'.trimEnd()}"`);
+
+console.log(`"${'        trim       '.trim()}"`);
+console.log(`"${'        trimStart       '.trimStart()}"`);
+console.log(`"${'        trimEnd       '.trimEnd()}"`);
+
+console.log(`"${'        a    b       '.trim()}"`);
+console.log(`"${'        a    b       '.trimStart()}"`);
+console.log(`"${'        a    b       '.trimEnd()}"`);
