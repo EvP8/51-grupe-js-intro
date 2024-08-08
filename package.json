@@ -5,6 +5,7 @@
   "type":"module" ,
   "main": "index.js",
   "scripts": {
+      "method:string": "node --watch ./js/method/string.js",
       "method:number": "node --watch ./js/method/number.js",
       "uzd:string": "node --watch ./uzd/string-reverse.js",
       "uzd:suma": "node --watch ./uzd/suma-intervale.js",
