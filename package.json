@@ -5,6 +5,8 @@
   "type":"module" ,
   "main": "index.js",
   "scripts": {
+      "method:array-filter": "node --watch ./js/method/array-filter.js",
+      "method:array-map": "node --watch ./js/method/array-map.js",
       "method:array": "node --watch ./js/method/array.js",
       "method:string": "node --watch ./js/method/string.js",
       "method:number": "node --watch ./js/method/number.js",
