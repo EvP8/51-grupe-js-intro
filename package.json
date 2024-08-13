@@ -5,6 +5,10 @@
   "type":"module" ,
   "main": "index.js",
   "scripts": {
+      "method:array-sort": "node --watch ./js/method/array-sort.js",
+      "method:array-foreach": "node --watch ./js/method/array-foreach.js",
+      "method:array-every": "node --watch ./js/method/array-every.js",
+      "method:array-flat": "node --watch ./js/method/array-flat.js",
       "method:array-filter": "node --watch ./js/method/array-filter.js",
       "method:array-map": "node --watch ./js/method/array-map.js",
       "method:array": "node --watch ./js/method/array.js",
