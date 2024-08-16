@@ -33,7 +33,7 @@
       "string": "node --watch ./js/kintamieji/string.js",
       "number": "node --watch ./js/kintamieji/number.js",
       "mini": "node --watch ./mini-uzduotis.js",
-      "cwt": "node --watch ./CodeWars/cw-test.js",
+      "cw": "node --watch ./CodeWars/cw.js",
       "dev": "node ./index.js",
       "test": "echo \"Error: no test specified\" && exit 1"
   },
