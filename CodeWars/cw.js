@@ -142,3 +142,152 @@
 
 
 // -------------------------------------------
+
+// function enough(cap, on, wait) {
+//     // your code here
+//     let remainingSpace = cap - on;
+//     if(remainingSpace >= wait) {
+//         return 0;
+//     } else {
+//         let cannotFit = wait - remainingSpace;
+//         return cannotFit;
+//     }
+// }
+ 
+// console.log(enough(10, 5, 5)); 
+// console.log(enough(100, 60, 50)); 
+// console.log(enough(20, 5, 10));
+// console.log(enough(30, 25, 10)); 
+
+// function enough(cap, on, wait) {
+//     return cap - wait - on < 0 ? on + wait - cap : 0;
+//   }
+
+//   -------------------------------------------
+
+// function otherAngle(a, b) {
+//     return 180 - (a + b);
+//   }
+
+// console.log(otherAngle(30, 60)); 90
+// console.log(otherAngle(45, 45)); 90
+// console.log(otherAngle(75, 25)); 80
+
+// -------------------------------------------
+
+// function magNumber(info) {
+//     const bulletsPerMagazine = {
+//         'PT92': 17,
+//         'M4A1': 30,
+//         'M16A2': 30,
+//         'PSG1': 5
+//     };
+
+//     const [weapon, streets] = info;
+//     const totalBulletsNeeded = streets * 3;
+//     const bulletsInMagazine = bulletsPerMagazine[weapon];
+//     return Math.ceil(totalBulletsNeeded / bulletsInMagazine);
+// }
+
+// console.log(magNumber(['PT92', 6]));  2
+// console.log(magNumber(['M4A1', 6]));  1
+// console.log(magNumber(['M16A2', 6])); 1
+// console.log(magNumber(['PSG1', 6]));  4
+
+// ----------------------------------------------
+
+// function findDifference(a, b) {
+//     let volumeA = a.reduce((acc, val) => acc * val, 1);
+//     let volumeB = b.reduce((acc, val) => acc * val, 1);
+//     return Math.abs(volumeA - volumeB);
+//   }
+//   console.log(findDifference([2, 2, 3], [5, 4, 1])); 8
+  
+
+// const times = (a, b) => a * b;
+
+// const find_difference = (a, b) => 
+// 	Math.abs(a.reduce(times) - b.reduce(times));
+
+// ----------------------------------------------
+
+// function reverseWords(str) {
+//     let words = str.split(' ');
+
+//     let reversedWords = words.reverse();
+    
+//     return reversedWords.join(' ');
+// }
+
+// console.log(reverseWords("The greatest victory is that which requires no battle")); 
+ 
+// function reverseWords(str){
+//     return str.split(' ').reverse().join(' ');
+//   }
+// ----------------------------------------------
+
+// function bmi(weight, height) {
+//     let bmi = weight / (height * height);
+//     if (bmi <= 18.5) {
+//         return "Underweight";
+//     } else if (bmi <= 25.0) {
+//         return "Normal";
+//     } else if (bmi <= 30.0) {
+//         return "Overweight";
+//     } else {
+//         return "Obese";
+//     }
+// }
+
+// console.log(bmi(50, 1.75));
+// console.log(bmi(70, 1.75));
+// console.log(bmi(85, 1.75));
+// console.log(bmi(95, 1.75));
+
+// function bmi(weight, height) {
+//     let bmi = weight / height ** 2
+//     return bmi <= 18.5 ? "Underweight" : 
+//            bmi <= 25 ? "Normal" :
+//            bmi <= 30 ? "Overweight": "Obese";
+//   }
+
+// ----------------------------------------------
+
+// function switchItUp(number) {
+//     switch (number) {
+//         case 0:
+//             return "Zero";
+//         case 1:
+//             return "One";
+//         case 2:
+//             return "Two";
+//         case 3:
+//             return "Three";
+//         case 4:
+//             return "Four"
+//         case 5:
+//             return "Five";
+//         case 6:
+//             return "Six";
+//         case 7:
+//             return "Seven";
+//         case 8:
+//             return "Eight";
+//         case 9:
+//             return "Nine"
+//         default:
+//             return "Invalid number";        
+//     }
+// }
+
+// console.log(switchItUp(0));  // "Zero"
+// console.log(switchItUp(1));  // "One"
+// console.log(switchItUp(5));  // "Five"
+// console.log(switchItUp(9));  // "Nine"
+// console.log(switchItUp(10)); // "Invalid number"
+
+// function switchItUp (number) {
+//     return 'Zero One Two Three Four Five Six Seven Eight Nine'.split(' ')[number];
+//   }
+
+// ----------------------------------------------
