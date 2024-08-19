@@ -291,3 +291,66 @@
 //   }
 
 // ----------------------------------------------
+
+// function simpleMultiplication(number) {
+//     // your code........
+//     if (number % 2 === 0) {
+//         return number * 8;
+//     } else {
+//         return number * 9;
+//     }
+// }
+
+// console.log(simpleMultiplication(2));  
+// console.log(simpleMultiplication(3)); 
+// console.log(simpleMultiplication(10));
+// console.log(simpleMultiplication(7));
+
+// function simpleMultiplication(n) {
+//     return n * (n % 2 ? 9 : 8);
+// }
+
+// ----------------------------------------------
+
+// function xor(a, b) {
+//     // TODO: Program Me
+//     return a != b;
+//   }
+
+//   console.log(xor(false, false)); 
+//   console.log(xor(true, false)); 
+//   console.log(xor(false, true));  
+//   console.log(xor(true, true));   
+
+//   const xor=(a, b)=>a!=b;
+
+  // ----------------------------------------------
+
+//   function checkAlive(health) {
+//     if (health > 0) {
+//       return true;
+//     } else {
+//       return false;
+//     }
+//   }
+  
+//   console.log(checkAlive(10));  
+//   console.log(checkAlive(1));   
+//   console.log(checkAlive(0));   
+//   console.log(checkAlive(-5));
+
+//   function checkAlive(health) {
+//     return health > 0;
+//   }
+
+//   ----------------------------------------------
+
+// function capitalizeWord(word) {
+//     return word[0].toUpperCase() + word.slice(1);
+//   }
+  
+//   console.log(capitalizeWord("hello")); 
+//   console.log(capitalizeWord("Hello")); 
+//   console.log(capitalizeWord("a"));    
+  
+// ------------------------------------------------
