@@ -1,3 +1,4 @@
+
 // vienos eilutes komentara
 
 /*
@@ -37,10 +38,10 @@ console.log(4, 5, 6, 7, 8, 9);
     - cikliski metodai:
         + map
         + filter
-        - sort
+        + sort
         - reduce
-        - foreach
-        - N+1...
+        + foreach
+        + N+1...
 + import-export
 + function:
     + "iprastos" deklaruotinos
@@ -49,7 +50,7 @@ console.log(4, 5, 6, 7, 8, 9);
 - methods:
     + number
     + string
-    - array
+    + array
     - object
 - class (oop):
     - class
@@ -62,3 +63,5 @@ console.log(4, 5, 6, 7, 8, 9);
     - mouse click (right/context)
     - scroll
 */
+
+console.log(Array.prototype.reduce);

@@ -24,28 +24,28 @@ marks.sort((a, b) => b - a);
 console.log(marks);
 console.clear();
 
-const family = [
+const studentList = [
     { name: 'Maryte', age: 88, marks: [10, 10, 6] },
     { name: 'Ona', age: 66, marks: [] },
     { name: 'Petras', age: 77, marks: [10, 2, 8, 4, 6] },
     { name: 'Jonas', age: 99, marks: [7, 6, 5, 4] },
 ];
-console.log(family);
+console.log(studentList);
 
-family.sort((a, b) => a.age - b.age);
-console.log(family);
+studentList.sort((a, b) => a.age - b.age);
+console.log(studentList);
 
-family.sort(
+studentList.sort(
     (a, b) =>
         a.name < b.name
             ? -1 :
             a.name === b.name ? 0 : 1);
-console.log(family);
+console.log(studentList);
 
 console.clear();
 
-family.sort((a, b) => b.marks.length - a.marks.length);
-console.log(family);
+studentList.sort((a, b) => b.marks.length - a.marks.length);
+console.log(studentList);
 
 function average(marks) {
     if (marks.length === 0) {
@@ -61,5 +61,5 @@ function average(marks) {
     return sum / marks.length;
 }
 
-family.sort((a, b) => average(b.marks) - average(a.marks));
-console.log(family);
+studentList.sort((a, b) => average(b.marks) - average(a.marks));
+console.log(studentList);

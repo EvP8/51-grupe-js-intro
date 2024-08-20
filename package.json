@@ -5,6 +5,8 @@
   "type":"module" ,
   "main": "index.js",
   "scripts": {
+      "spread": "node --watch ./js/method/spread.js",
+      "method:array-reduce": "node --watch ./js/method/array-reduce.js",
       "method:array-sort": "node --watch ./js/method/array-sort.js",
       "method:array-foreach": "node --watch ./js/method/array-foreach.js",
       "method:array-every": "node --watch ./js/method/array-every.js",
@@ -14,6 +16,7 @@
       "method:array": "node --watch ./js/method/array.js",
       "method:string": "node --watch ./js/method/string.js",
       "method:number": "node --watch ./js/method/number.js",
+      "uzd:students-average": "node --watch ./uzd/students-average.js",
       "uzd:string": "node --watch ./uzd/string-reverse.js",
       "uzd:suma": "node --watch ./uzd/suma-intervale.js",
       "typeof": "node --watch ./js/if/typeof.js",

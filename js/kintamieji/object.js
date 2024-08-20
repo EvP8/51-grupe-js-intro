@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 OBJECT - objektas
 key-value porų sąrašas
@@ -116,64 +118,6 @@ Prekiu krepselio verte yra TOTAL KAINA Eur.
 
 console.clear();
 
-
-"use strict";
-
-// Prekių sąrašas
-
-const krepselis = [
-    {
-        pavadinimas: 'Duona',
-        kainaUzVieneta: 1.5,
-        kiekis: 2,
-    },
-    {
-        pavadinimas: 'Svietas',
-        kainaUzVieneta: 2.2,
-        kiekis: 1,
-    },
-    {
-        pavadinimas: 'Sūris',
-        kainaUzVieneta: 1.7,
-        kiekis: 2,
-    },
-    {
-        pavadinimas: 'Arbata',
-        kainaUzVieneta: 2,
-        kiekis: 3,
-    },
-];
-
-// Prekių kiekio nustatymas
-
-const prekiuSkaicius = krepselis.length;
-console.log('Prekių krepšelyje yra ' + prekiuSkaicius + ' prekių.');
-
-// B) Prekių sąrašo rodymas
-
-console.log('Prekių krepšelis');
-console.log('----------------');
-console.log('1) ' + krepselis[0].pavadinimas + ' (' + krepselis[0].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
-krepselis[0].kiekis);
-console.log('2) ' + krepselis[1].pavadinimas + ' (' + krepselis[1].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
-krepselis[1].kiekis);
-console.log('3) ' + krepselis[2].pavadinimas + ' (' + krepselis[2].kainaUzVieneta.toFixed(2) + ' Eur) - ' +
-krepselis[2].kiekis);
-console.log('4) ' + krepselis[3].pavadinimas + ' (' + krepselis[3].kainaUzVieneta.toFixed(2) + ' Eur) - ' + 
-krepselis[3].kiekis);
-
-
-// C) Prekių krepšelis vertės apskaičiavimas
-
-let prekiuKaina = krepselis [0].kainaUzVieneta * krepselis [0].kiekis +
-                  krepselis [1].kainaUzVieneta * krepselis [1].kiekis +
-                  krepselis [2].kainaUzVieneta * krepselis [2].kiekis +
-                  krepselis [3].kainaUzVieneta * krepselis [3].kiekis;
-
-console.log ('Prekių krepšelio vertė yra ' + prekiuKaina.toFixed(2) + 'Eur.');
-
-console.clear();
-
 const pc = {
     monitor: {
         width: 1980,
@@ -181,32 +125,38 @@ const pc = {
     },
     ram: 16,
     hd: 100,
-    keyboard: "en",
+    keyboard: 'en',
     mouse: true,
     power: false,
 };
 
 const param = 'monitor';
-console.log(pc['param']);
+console.log(pc[param]);
 
 console.log(pc.monitor.width);
 console.log(pc.monitor.height);
-console.log(pc.monitor.width);
+console.log(pc['monitor'].width);
+console.log(pc['monitor'].height);
+console.log(pc['monitor']['width']);
+console.log(pc['monitor']['height']);
+console.log(pc.monitor['width']);
+console.log(pc.monitor['height']);
+
+console.log(pc[param]);
+console.log(pc[param].width);
+console.log(pc[param]['height']);
 
 console.clear();
 
-
-
-
 const crazy = {
-    title: 'Some crazy ...😎',
-    description: 'Prepare yourself... 🚗',
+    title: 'Some crazy ... 👀',
+    description: 'Prepare yourself... 🛸',
     'crazy marks': [10, 2, 8, 4, 6],
     123: {
         one: true,
         two: true,
         three: true,
-    }
+    },
 };
 
 console.log(crazy);
@@ -217,8 +167,8 @@ console.log(crazy['123']);
 console.log(crazy[123]);
 
 /*
-string = supaprastintas array
-array = supaprastintas object
+string = supaprastingas array
+array = supaprastingas object
 */
 console.log(crazy.title);
 console.log(crazy.title[0]);
@@ -266,4 +216,32 @@ console.log(marks[0]);
 
 marks[1] = 10;
 console.log(marks);
-console.log(marks[1])
+console.log(marks[1]);
+
+console.clear();
+
+const person = {
+    name: 'Jonas',
+    age: undefined,
+    isMarried: undefined,
+};
+
+person.age = 99;
+person.isMarried = true;
+console.log(person);
+
+console.log(person.address);
+
+person.address = 'Stelmuzes Azuolo g 1, Zarasai';
+console.log(person);
+console.log(person.address);
+
+console.clear();
+
+const car = {};
+
+car.brand = 'Audi';
+car.model = '80';
+car.color = '#ff0000';
+
+console.log(car);
