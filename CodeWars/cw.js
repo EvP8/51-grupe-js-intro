@@ -354,3 +354,43 @@
 //   console.log(capitalizeWord("a"));    
   
 // ------------------------------------------------
+
+// function contamination(text, char) {
+//   // Code here ;)
+//   if (text === "" || char === "") {
+//     return "";
+//   }
+  
+//   return char.repeat(text.length);
+// }
+
+// console.log(contamination("abc", "z")); 
+// console.log(contamination("", "z"));    
+// console.log(contamination("abc", ""));  
+
+// function contamination(text, char){
+//   return char.repeat(text.length)
+// }
+
+// ------------------------------------------------
+
+// function sayHello(name) {
+//   return 'Hello, ' + name;
+// }
+
+// console.log(sayHello("Mr. Spock")); 
+
+// --------------------------------------------------
+
+// function setAlarm (employed, vacation) {
+//     return employed && !vacation;
+// }
+
+// console.log(setAlarm(true, true));
+// console.log(setAlarm(true, false));
+// console.log(setAlarm(false, true));
+// console.log(setAlarm(false, false));
+
+// const setAlarm = (employed, vacation) => employed && !vacation;
+
+// ----------------------------------------------------
