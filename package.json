@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
       "spread": "node --watch ./js/method/spread.js",
+      "math:random": "node --watch ./js/method/math-random.js",
       "method:array-reduce": "node --watch ./js/method/array-reduce.js",
       "method:array-sort": "node --watch ./js/method/array-sort.js",
       "method:array-foreach": "node --watch ./js/method/array-foreach.js",
