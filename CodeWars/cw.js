@@ -394,3 +394,45 @@
 // const setAlarm = (employed, vacation) => employed && !vacation;
 
 // ----------------------------------------------------
+
+// function smash(words) {
+//     return words.join(' ');
+// }
+
+// console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+
+// const smash = words => words.join(' ');
+
+// ------------------------------------------------------
+
+// function greet(name){
+//   if(name === "Johnny") {
+//     return "Hello, my love!"; 
+//   } else {
+//       return "Hello, " + name + "!";     
+//   }
+// }
+// console.log(greet('Johnny'));
+// console.log(greet('name'));
+
+// const greet = name =>
+//   name === "Johnny" ? "Hello, my love!" : "Hello, " + name + "!";
+
+// -------------------------------------------------------
+
+// const createGreetFunction = (greetingName) => {
+//   return () => 'Hello, ' + greetingName + '!';
+// }
+
+// const greetAbe = createGreetFunction('Abe');
+// const greetBen = createGreetFunction('Ben');
+
+// console.log(greetAbe());
+// console.log(greetBen());
+
+// const greet = name =>
+//   () => `Hello, ${name}!`;
+// const greet_abe = greet(`Abe`);
+// const greet_ben = greet(`Ben`);
+
+// -------------------------------------------------------
