@@ -436,3 +436,94 @@
 // const greet_ben = greet(`Ben`);
 
 // -------------------------------------------------------
+
+// function findNeedle(haystack) {
+//   // your code here
+// const position = haystack.indexOf("needle");
+
+// return `found the needle at position ${position}`;
+// }
+
+// console.log(findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]));
+
+// function findNeedle(haystack) {
+//   return "found the needle at position " + haystack.indexOf("needle");
+// }
+
+// -------------------------------------------------------
+
+// function pillars(numPill, dist, width) {
+//   // your code here
+//     if (numPill < 2) return 0;
+//     const distInCm = dist * 100;
+//     const totalDistanceInCm = (numPill - 1) * distInCm;
+//     return totalDistanceInCm - width;
+//   }
+  
+//   console.log(pillars(1, 10, 10)); 
+//   console.log(pillars(2, 20, 25));
+//   console.log(pillars(11, 15, 30)); 
+
+// -------------------------------------------------------
+
+// function solution(a, b){
+//   // your code here
+//   if (a.length < b.length) {
+//       return a + b + a; 
+//   } else {
+//       return b + a + b;
+//   }
+// }
+
+// console.log(solution("1", "22"));
+// console.log(solution("22", "1"));
+
+// function solution(a, b) {
+//   return a.length < b.length ? a + b + a : b + a + b
+// }
+
+// const solution = (a, b) => (a.length > b.length) ? b + a + b : a + b + a;
+
+// -------------------------------------------------------
+
+// function paperwork(n, m) {
+//   if (n < 0 || m < 0) {
+//       return 0;
+//   }
+//   return n * m;
+// }
+
+// console.log(paperwork(5, 5));
+// console.log(paperwork(-5, 5));
+
+// function paperwork(n, m) {
+//   return n < 0 || m < 0 ? 0 : n * m;
+// }
+
+// -------------------------------------------------------
+
+function peopleWithAgeDrink(old) {
+  if (old < 14) {
+      return "drink toddy";
+  }
+  if (old < 18) {
+      return "drink coke";
+  }
+  if (old < 21) {
+      return "drink beer";
+  }
+  return "drink whisky";
+}
+
+console.log(peopleWithAgeDrink(13)); 
+console.log(peopleWithAgeDrink(17)); 
+console.log(peopleWithAgeDrink(18)); 
+console.log(peopleWithAgeDrink(20)); 
+console.log(peopleWithAgeDrink(30)); 
+
+const peopleWithAgeDrink = (age) =>
+  age < 14 ? "drink toddy" :
+  age < 18 ? "drink coke" :
+  age < 21 ? "drink beer" : "drink whisky"
+
+// -------------------------------------------------------
