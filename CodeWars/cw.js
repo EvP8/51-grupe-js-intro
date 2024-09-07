@@ -502,28 +502,143 @@
 
 // -------------------------------------------------------
 
-function peopleWithAgeDrink(old) {
-  if (old < 14) {
-      return "drink toddy";
-  }
-  if (old < 18) {
-      return "drink coke";
-  }
-  if (old < 21) {
-      return "drink beer";
-  }
-  return "drink whisky";
-}
+// function peopleWithAgeDrink(old) {
+//   if (old < 14) {
+//       return "drink toddy";
+//   }
+//   if (old < 18) {
+//       return "drink coke";
+//   }
+//   if (old < 21) {
+//       return "drink beer";
+//   }
+//   return "drink whisky";
+// }
 
-console.log(peopleWithAgeDrink(13)); 
-console.log(peopleWithAgeDrink(17)); 
-console.log(peopleWithAgeDrink(18)); 
-console.log(peopleWithAgeDrink(20)); 
-console.log(peopleWithAgeDrink(30)); 
+// console.log(peopleWithAgeDrink(13)); 
+// console.log(peopleWithAgeDrink(17)); 
+// console.log(peopleWithAgeDrink(18)); 
+// console.log(peopleWithAgeDrink(20)); 
+// console.log(peopleWithAgeDrink(30)); 
 
-const peopleWithAgeDrink = (age) =>
-  age < 14 ? "drink toddy" :
-  age < 18 ? "drink coke" :
-  age < 21 ? "drink beer" : "drink whisky"
+// const peopleWithAgeDrink = (age) =>
+//   age < 14 ? "drink toddy" :
+//   age < 18 ? "drink coke" :
+//   age < 21 ? "drink beer" : "drink whisky"
+
+// -------------------------------------------------------
+
+// function validateHello(greetings) {
+//   const pattern = /hello|ciao|salut|hallo|hola|ahoj|czesc/i
+//   const res = pattern.test(greetings);
+//   return res;
+// }
+
+// function validateHello(greetings) {
+//   return /(ahoj|ciao|czesc|h[ae]llo|hola|salut)/i.test(greetings)
+// }
+
+// -------------------------------------------------------
+
+// function booleanToString(b){
+//   //your code here
+//   return b.toString();
+// }
+
+// console.log(booleanToString(true));
+// console.log(booleanToString(false));
+
+
+// function booleanToString(b){
+//   return b ? 'true' : 'false';
+// }
+
+// -------------------------------------------------------
+
+// function updateLight(current) {
+//   if (current === 'green') {
+//     return 'yellow';
+//   } else if (current === 'yellow') {
+//     return 'red';
+//   } else if (current === 'red') {
+//     return 'green';
+//   }
+// }
+
+// console.log(updateLight('green')); 
+// console.log(updateLight('yellow')); 
+// console.log(updateLight('red'));
+
+// function updateLight(current) {
+  
+//   return current === 'yellow' ? 'red' : current === 'green' ? 'yellow' : 'green';
+
+// }
+
+// -------------------------------------------------------
+
+// function quadrant(x, y) {
+//   if (x > 0 && y > 0) {
+//     return 1;  
+//   } else if (x < 0 && y > 0) {
+//     return 2; 
+//   } else if (x < 0 && y < 0) {
+//     return 3;  
+//   } else if (x > 0 && y < 0) {
+//     return 4;  
+//   }
+// }
+// console.log(quadrant(1, 2));    
+// console.log(quadrant(-10, 100)); 
+// console.log(quadrant(-1, -9));   
+// console.log(quadrant(19, -56)); 
+
+// function quadrant(x, y) {
+//   if (x > 0 && y > 0) return 1;
+//   if (x < 0 && y > 0) return 2;
+//   if (x < 0 && y < 0) return 3;
+//   return 4;
+
+//   function quadrant(x, y) {
+//     return x > 0 ? y > 0 ? 1 : 4 : y > 0 ? 2 : 3;
+//   }
+
+//   -------------------------------------------------------
+
+// function integrate(coefficient, exponent) {
+//   let newExponent = exponent + 1;
+  
+//   let newCoefficient = coefficient / newExponent;
+  
+//   return `${newCoefficient}x^${newExponent}`;
+// }
+
+// const integrate = (coefficient, exponent) => {
+//   return coefficient / (exponent + 1) + 'x^' + (exponent + 1);
+// }
+
+// console.log(integrate(3, 2));   
+// console.log(integrate(20, 1));   
+// console.log(integrate(40, 3));   
+// console.log(integrate(90, 2));   
+
+// -------------------------------------------------------
+
+// function derive(coefficient, exponent) {
+//   let product = coefficient * exponent;
+//   let newExponent = exponent - 1;
+//   return `${product}x^${newExponent}`;
+// }
+
+// function derive(coefficient,exponent) {
+//   return `${coefficient*exponent}x^${exponent-1}`
+// }
+
+// function derive(a, b) {
+//   return (a * b) + "x^" + (b - 1);
+// }
+
+// console.log(derive(7, 8));  
+// console.log(derive(5, 9));  
 
 // -------------------------------------------------------
