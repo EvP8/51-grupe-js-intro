@@ -642,3 +642,50 @@
 // console.log(derive(5, 9));  
 
 // -------------------------------------------------------
+
+// function checkForFactor(base, factor) {
+//   return base % factor === 0;
+// }
+
+// console.log(checkForFactor(6, 2));  // true, nes 6 % 2 = 0
+// console.log(checkForFactor(7, 2));  // false, nes 7 % 2 = 1
+// console.log(checkForFactor(10, 5)); // true, nes 10 % 5 = 0
+// console.log(checkForFactor(15, 4)); // false, nes 15 % 4 = 3
+
+// const checkForFactor = (base, factor) => !(base % factor);
+
+// -------------------------------------------------------
+
+// function getAverage(marks){
+//   //TODO : calculate the downward rounded average of the marks array
+//   const totalSum = marks.reduce((sum, mark) => sum + mark, 0);
+//   const average = totalSum / marks.length;
+//   return Math.floor(average);
+// }
+
+// console.log(getAverage([90, 80, 70, 60])); 
+// console.log(getAverage([100, 95, 85, 80])); 
+// console.log(getAverage([65, 75, 85, 95]));  
+
+// function getAverage(marks){
+//   return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+// }
+
+// -------------------------------------------------------
+
+// function quadratic(x1, x2) {
+//   const a = 1;
+//   const b = -(x1 + x2);
+//   const c = x1 * x2;
+//   return [a, b, c];
+// }
+
+// console.log(quadratic(1, 2)); 
+// console.log(quadratic(0, 1));  
+// console.log(quadratic(3, 3)); 
+
+// function quadratic(x1, x2){
+//   return [1, -(x2 + x1), (x1 * x2)]
+// }
+
+// -------------------------------------------------------
