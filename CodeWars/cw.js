@@ -689,3 +689,27 @@
 // }
 
 // -------------------------------------------------------
+
+// function grow(x){
+//   let result = 1;
+//   for (let i = 0; i < x.length; i++) {
+//     result *= x[i];
+//   }
+//   return result;
+// }
+
+// console.log(grow([1,2,3,4]));
+
+// const grow=x=> x.reduce((a,b) => a*b);
+
+// -------------------------------------------------------
+
+// function square(num) {
+//   return num * num;
+// }
+
+// console.log(square(5));
+
+// const square = (n) => n * n;
+
+// --------------------------------------------------------
