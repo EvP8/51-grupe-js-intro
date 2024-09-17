@@ -713,3 +713,53 @@
 // const square = (n) => n * n;
 
 // --------------------------------------------------------
+
+// function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+//   // code goes here
+//   return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+// }  
+// console.log(goals(5, 10, 2));
+
+// const goals = (laLigaGoals, copaDelReyGoals, championsLeagueGoals) => laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+
+// --------------------------------------------------------
+
+// function sc(floor) {
+//   if (floor <= 1) {
+//     return ""; 
+//   }
+
+//   let scream = "Aa~ ".repeat(floor - 1) + "Pa!"; 
+
+//   if (floor <= 6) {
+//     scream += " Aa!";
+//   } 
+
+//   return scream;
+// }
+
+// console.log(sc(2)); 
+// console.log(sc(6)); 
+// console.log(sc(7)); 
+// console.log(sc(10)); 
+
+// const sc = floor => 
+//   floor >= 7 ? 'Aa~ '.repeat(floor - 1) + 'Pa!' :
+//   floor > 1 ?  'Aa~ '.repeat(floor - 1) + 'Pa! Aa!' : ''
+
+// --------------------------------------------------------
+
+// function createArray(number) {
+//   var newArray = [];
+  
+//   for (var counter = 1; counter <= number; counter++) { 
+//     newArray.push(counter);
+//   }
+  
+//   return newArray;
+// }
+
+// console.log(createArray(5)); 
+// console.log(createArray(3)); 
+
+// --------------------------------------------------------
