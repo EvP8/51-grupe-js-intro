@@ -828,3 +828,59 @@
 // const wrap = value => ({value});
 
 // --------------------------------------------------------
+
+const solve = (x, y) => x / y
+
+console.log(solve(10,5));
+
+// --------------------------------------------------------
+
+// function weatherInfo(temp) {
+//   var c = convertToCelsius(temp);
+//   console.log("Temperature in Celsius: " + c);
+//   if (c <= 0)
+//     return c + " is freezing temperature";
+//   else
+//     return c + " is above freezing temperature";
+// }
+
+// function convertToCelsius(temperature) {
+//   var celsius = (temperature - 32) * (5 / 9);
+//   console.log("Converted temperature: " + celsius);
+//   return celsius;  
+// }
+
+// console.log(weatherInfo(50));  
+// console.log(weatherInfo(0));   
+
+// const weatherInfo = temperature => temperatureMesage(convertToCelsius(temperature));
+
+// const convertToCelsius = temperature => (temperature - 32) * (5 / 9);
+
+// const temperatureMesage = temperature => temperature + ((temperature <= 0) ? " is freezing temperature" : " is above freezing temperature")
+
+// --------------------------------------------------------
+
+// let items = [];
+// items.push({a: "b", c: "d"});  
+
+// console.log(items);
+
+// items = [{a: "b", c: "d"}];
+
+// --------------------------------------------------------
+
+// function myFirstKata(a, b) {
+//   if (typeof(a) !== "number" || typeof(b) !== "number") {
+//     return false;
+//   } else {
+//     return a % b + b % a;
+//   }
+// }
+
+// console.log(myFirstKata(10, 2)); 
+// console.log(myFirstKata("10", 2));
+
+// const myFirstKata = (a, b) => typeof a !== "number" || typeof b !== "number" ? false : a % b + b % a;
+
+// --------------------------------------------------------
