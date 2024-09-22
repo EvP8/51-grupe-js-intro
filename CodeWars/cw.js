@@ -884,3 +884,41 @@ console.log(solve(10,5));
 // const myFirstKata = (a, b) => typeof a !== "number" || typeof b !== "number" ? false : a % b + b % a;
 
 // --------------------------------------------------------
+
+// function rainAmount(mm) {
+//   if (mm < 40) {
+//       return "You need to give your plant " + (40 - mm) + "mm of water";
+//   } else {
+//       return "Your plant has had more than enough water for today!";
+//   }
+// }
+
+// console.log(rainAmount(39));
+// console.log(rainAmount(40));
+// console.log(rainAmount(50));
+
+// function rainAmount(mm){
+//   return mm < 40 ? `You need to give your plant ${40 - mm}mm of water` : "Your plant has had more than enough water for today!"
+// }
+
+// --------------------------------------------------------
+
+// function getMax1() {
+//   var max = {
+//       name: 'Max Headroom'
+//   };
+//   return max;
+// }
+
+// function getMax2() {
+//   return {
+//       name: 'Max Headroom'
+//   };
+// }
+
+// console.log(getMax1());
+// console.log(getMax2());
+
+// const getMax1 = getMax2 = () => ({ name: 'Max Headroom' })
+
+// --------------------------------------------------------
