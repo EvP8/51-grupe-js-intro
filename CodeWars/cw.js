@@ -829,9 +829,9 @@
 
 // --------------------------------------------------------
 
-const solve = (x, y) => x / y
+// const solve = (x, y) => x / y
 
-console.log(solve(10,5));
+// console.log(solve(10,5));
 
 // --------------------------------------------------------
 
@@ -920,5 +920,46 @@ console.log(solve(10,5));
 // console.log(getMax2());
 
 // const getMax1 = getMax2 = () => ({ name: 'Max Headroom' })
+
+// --------------------------------------------------------
+
+// function saleHotdogs(n) {
+//   return n < 5 ? n * 100 : n < 10 ? n * 95 : n * 90;
+// }
+
+// console.log(saleHotdogs());
+
+// const saleHotdogs=n=>n*(n<5?100:n<10?95:90);
+
+// --------------------------------------------------------
+
+// function giveMeFive(obj) {
+//   let result = [];
+//   for (let key in obj) {
+//     if (key.length === 5) {
+//       result.push(key);
+//     }
+//     if (obj[key].length === 5) {
+//       result.push(obj[key]);
+//     }
+//   }
+//   return result;
+// }
+
+// console.log(giveMeFive());
+
+// function giveMeFive(obj){
+//   // for ( in )
+//   return Object.entries(obj).join(',').split(',').filter((el) => el.length == 5);
+// }
+
+// --------------------------------------------------------
+
+// function helloWorld() {
+//   var str = "Hello World!";
+//   console.log(str);
+// }
+
+// console.log(helloWorld);
 
 // --------------------------------------------------------
