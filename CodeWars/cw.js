@@ -1079,3 +1079,38 @@
 // }
 
 //  -------------------------------------------------------
+
+// function animal(obj) {
+//   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+// }
+
+// const dog = { name: "dog", legs: 4, color: "white" };
+// console.log(animal(dog));  
+
+// console.log(animal({ name: "cat", legs: 4, color: "black" }));  
+// console.log(animal({ name: "bird", legs: 2, color: "yellow" })); 
+
+// function animal(obj){
+//   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+// }
+
+//  -------------------------------------------------------
+
+// function feast(beast, dish) {
+//   const beastFirstChar = beast[0];
+//   const beastLastChar = beast[beast.length - 1];
+//   const dishFirstChar = dish[0];
+//   const dishLastChar = dish[dish.length - 1];
+
+//   return beastFirstChar === dishFirstChar && beastLastChar === dishLastChar;
+// }
+
+// console.log(feast("great blue heron", "garlic naan")); 
+// console.log(feast("chickadee", "chocolate cake"));     
+// console.log(feast("lion", "meat pie"));                 
+
+// function feast(beast, dish) {
+// 	return beast[0] === dish[0] && beast[beast.length - 1] === dish[dish.length - 1]
+// }
+
+// -------------------------------------------------------
