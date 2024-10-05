@@ -1114,3 +1114,39 @@
 // }
 
 // -------------------------------------------------------
+
+  // var countSheep = function (num) {
+  //   let result = "";  
+    
+  //   for (let i = 1; i <= num; i++) {
+  //     result += i + " sheep...";  
+  //   }
+    
+  //   return result;  
+  // }
+
+  // console.log(countSheep(3)); 
+
+  // var countSheep = function (num){
+  //   let str = "";
+  //   for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  //   return str;
+  // }
+
+  // -------------------------------------------------------
+
+  // function cubeChecker(volume, side) {
+  //   if (volume <= 0 || side <= 0) {
+  //     return false;
+  //   }
+        
+  //   return side ** 3 === volume;
+  // }
+
+  // console.log(cubeChecker());
+  
+  // var cubeChecker = function(volume, side){
+  //   return Math.pow(side, 3) === volume && side > 0;
+  // };
+
+  // -------------------------------------------------------
