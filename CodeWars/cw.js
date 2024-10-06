@@ -1150,3 +1150,26 @@
   // };
 
   // -------------------------------------------------------
+//   function sixToast(num) {
+//     return Math.abs(num - 6);
+//   }
+
+// console.log(sixToast(5));
+// console.log(sixToast(12));
+
+// function sixToast(num) {
+  
+//   return num >= 6 ? num - 6 : num;
+// }
+
+// ------------------------------------------------------
+
+// function ifChuckSaysSo() {
+//   return !true;
+// }
+
+// console.log(ifChuckSaysSo()); 
+
+// function ifChuckSaysSo(){return !true;}
+
+// ------------------------------------------------------
