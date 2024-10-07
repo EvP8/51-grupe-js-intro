@@ -1173,3 +1173,50 @@
 // function ifChuckSaysSo(){return !true;}
 
 // ------------------------------------------------------
+
+// function greet(language) {
+//   const greetings = {
+//       english: "Welcome",
+//       czech: "Vitejte",
+//       danish: "Velkomst",
+//       dutch: "Welkom",
+//       estonian: "Tere tulemast",
+//       finnish: "Tervetuloa",
+//       flemish: "Welgekomen",
+//       french: "Bienvenue",
+//       german: "Willkommen",
+//       irish: "Failte",
+//       italian: "Benvenuto",
+//       latvian: "Gaidits",
+//       lithuanian: "Laukiamas",
+//       polish: "Witamy",
+//       spanish: "Bienvenido",
+//       swedish: "Valkommen",
+//       welsh: "Croeso"
+//   };
+
+//   return greetings[language] || "Welcome";
+// }
+
+// console.log(greet("spanish"));
+// console.log(greet("german"));
+// console.log(greet("finnish"));
+// console.log(greet("unknown"));
+// console.log(greet(""));
+
+// ------------------------------------------------------
+
+// function howManySmaller(arr, n) {
+//   const roundedArr = arr.map(num => +num.toFixed(2));
+//   return roundedArr.filter(num => num < n).length;
+// }
+
+// console.log(howManySmaller([1.234,1.235,1.228], 1.24)); // 2
+// console.log(howManySmaller([1.1888,1.1868,1.1838], 1.19)); // 1
+// console.log(howManySmaller([3.1288,3.1212,3.1205], 3.1212)); // 2
+
+// function howManySmaller(arr,n){
+//   return arr.filter(x => +x.toFixed(2) < n).length;
+// }
+
+// ------------------------------------------------------
