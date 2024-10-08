@@ -1220,3 +1220,46 @@
 // }
 
 // ------------------------------------------------------
+
+// function drawStairs(n) {
+//   let stairs = "";
+  
+//   for (let i = 0; i < n; i++) {
+//     stairs += " ".repeat(i) + "I";
+    
+//     if (i < n - 1) {
+//       stairs += "\n";
+//     }
+//   }
+
+//   return stairs;
+// }
+
+// console.log(drawStairs(5));
+
+// const drawStairs = n => [...Array(n)].map((_, i) => " ".repeat(i) + "I").join("\n");
+
+// ------------------------------------------------------
+
+// function cookie(x) {
+//   if (typeof x === 'string') {
+//     return "Who ate the last cookie? It was Zach!";
+//   } else if (typeof x === 'number') {
+//     return "Who ate the last cookie? It was Monica!";
+//   } else {
+//     return "Who ate the last cookie? It was the dog!";
+//   }
+// }
+
+// console.log(cookie("hi")); 
+// console.log(cookie(3.14)); 
+// console.log(cookie(42));   
+// console.log(cookie(true)); 
+// console.log(cookie([]));   
+// console.log(cookie({}));   
+
+// function cookie(x){
+//   return `Who ate the last cookie? It was ${({string: "Zach", number: "Monica"}[typeof x] || "the dog")}!`;
+// }
+
+// ------------------------------------------------------
