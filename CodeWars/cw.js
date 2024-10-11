@@ -1271,3 +1271,36 @@
 // console.log(main("run", "ning"));
 
 // ------------------------------------------------------
+
+// function _if(bool, func1, func2) {
+//   if (bool) {
+//     func1();
+//   } else {
+//     func2();
+//   }
+// }
+
+// _if(true, 
+//   function() { console.log("True"); }, 
+// );
+
+
+// _if(false, 
+//   function() { console.log("True"); }, 
+//   function() { console.log("False"); }
+// );
+
+// function _if(bool, func1, func2) {
+//   return bool ? func1() : func2();
+// }
+
+// ------------------------------------------------------
+
+// function reverseList(list) {
+//   return list.reverse();
+// }
+
+// console.log(reverseList([1, 2, 3, 4]));  
+// console.log(reverseList([9, 2, 0, 7]));  
+
+// ------------------------------------------------------
