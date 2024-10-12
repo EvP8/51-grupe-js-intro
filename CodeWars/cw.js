@@ -1304,3 +1304,56 @@
 // console.log(reverseList([9, 2, 0, 7]));  
 
 // ------------------------------------------------------
+
+// function isPythagoreanTriple(integers) {
+//   integers.sort((a, b) => a - b);
+  
+//   const [a, b, c] = integers;
+  
+//   return a * a + b * b === c * c;
+// }
+
+// console.log(isPythagoreanTriple([5, 3, 4]));
+// console.log(isPythagoreanTriple([3, 4, 5]));
+// console.log(isPythagoreanTriple([13, 12, 5])); 
+// console.log(isPythagoreanTriple([100, 3, 999])); 
+
+// function isPythagoreanTriple(nums) {
+//   const [a,b,c] = nums.sort((a,b) => a - b)
+
+//   return a**2 + b**2 === c**2
+// }
+
+// ------------------------------------------------------
+
+// var hotpo = function(n) {
+//   if (n === 1) return 0;
+  
+//   let steps = 0;
+  
+//   while (n !== 1) {
+//       if (n % 2 === 0) {
+//           n = n / 2;
+//       } else {
+//           n = 3 * n + 1;
+//       }
+//       steps++;
+//   }
+  
+//   return steps;
+// };
+
+// console.log(hotpo(1));  
+// console.log(hotpo(5));  
+// console.log(hotpo(6));  
+// console.log(hotpo(23)); 
+
+// var hotpo = function(n, acc = 0) {
+//   if (n <= 1) {
+//     return acc;
+//   } else {
+//     return hotpo(n%2==0 ? n/2 : 3*n+1, acc+1);
+//   }
+// }
+
+// ------------------------------------------------------
