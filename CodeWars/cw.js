@@ -1357,3 +1357,35 @@
 // }
 
 // ------------------------------------------------------
+
+// const stringToNumber = function(str) {
+//   return Number(str);
+// };
+
+// console.log(stringToNumber("1234")); 
+// console.log(stringToNumber("605"));  
+// console.log(stringToNumber("1405")); 
+// console.log(stringToNumber("-7"));   
+
+// ------------------------------------------------------
+
+// function areYouPlayingBanjo(name) {
+//   return name;
+// }function areYouPlayingBanjo(name) {
+//     if (name.charAt(0) === 'R' || name.charAt(0) === 'r') {
+//         return name + " plays banjo";
+//     } else {
+//         return name + " does not play banjo";
+//     }
+// }
+
+// console.log(areYouPlayingBanjo("Ringo")); 
+// console.log(areYouPlayingBanjo("George")); 
+// console.log(areYouPlayingBanjo("ringo")); 
+// console.log(areYouPlayingBanjo("Paul")); 
+
+// function areYouPlayingBanjo(name) {
+//   return name + (name[0].toLowerCase() == 'r' ? ' plays' : ' does not play') + " banjo";
+// }
+
+// ------------------------------------------------------
