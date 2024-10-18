@@ -1389,3 +1389,71 @@
 // }
 
 // ------------------------------------------------------
+
+// function basicOp(operation, value1, value2) {
+//   switch (operation) {
+//     case '+':
+//       return value1 + value2;
+//     case '-':
+//       return value1 - value2;
+//     case '*':
+//       return value1 * value2;
+//     case '/':
+//       return value1 / value2;
+//     default:
+//       return "Invalid operation";
+//   }
+// }
+
+// console.log(basicOp('+', 4, 7)); 
+// console.log(basicOp('-', 15, 18)); 
+// console.log(basicOp('*', 5, 5));   
+// console.log(basicOp('/', 49, 7));  
+
+// function basicOp(operation, value1, value2) {
+//   return eval(`${value1}${operation}${value2}`);
+// }
+
+// ------------------------------------------------------
+
+// function whatday(num) {
+//   switch (num) {
+//       case 1:
+//           return "Sunday";
+//       case 2:
+//           return "Monday";
+//       case 3:
+//           return "Tuesday";
+//       case 4:
+//           return "Wednesday";
+//       case 5:
+//           return "Thursday";
+//       case 6:
+//           return "Friday";
+//       case 7:
+//           return "Saturday";
+//       default:
+//           return "Wrong, please enter a number between 1 and 7";
+//   }
+// }
+
+// console.log(whatday(1)); 
+// console.log(whatday(5)); 
+// console.log(whatday(8)); 
+
+// function whatday(num) { 
+
+//   const day = 
+//     num == 1 ? 'Sunday' 
+//   : num == 2 ? 'Monday' 
+//   : num == 3 ? 'Tuesday'
+//   : num == 4 ? 'Wednesday'  
+//   : num == 5 ? 'Thursday'
+//   : num == 6 ? 'Friday'
+//   : num == 7 ? 'Saturday' 
+//   : 'Wrong, please enter a number between 1 and 7';
+  
+//   return day
+//   }
+
+//   ------------------------------------------------------
