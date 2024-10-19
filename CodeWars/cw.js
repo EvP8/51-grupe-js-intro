@@ -1457,3 +1457,72 @@
 //   }
 
 //   ------------------------------------------------------
+
+// function bingo(a) {
+//   const bingoNumbers = [2, 9, 14, 7, 15];
+
+//   const isBingo = bingoNumbers.every(num => a.includes(num));
+
+//   return isBingo ? "WIN" : "LOSE";
+// }
+
+// console.log(bingo([1, 2, 3, 9, 14, 7, 15, 18, 20, 26])); 
+// console.log(bingo([1, 3, 5, 9, 14, 7, 20, 21, 25, 26])); 
+// console.log(bingo([2, 9, 14, 7, 15, 5, 18, 22, 26, 1])); 
+// console.log(bingo([1, 3, 6, 8, 10, 12, 14, 15, 17, 19])); 
+
+// function bingo(a) {
+//   return [2,9,14,7,15].every(x => a.includes(x)) ? "WIN" : "LOSE"
+// }
+
+// ------------------------------------------------------
+
+// function isValidChess960(pieces) {
+//   let bishopIndices = [];
+  
+//   for (let i = 0; i < pieces.length; i++) {
+//     if (pieces[i] === 'B') {
+//       bishopIndices.push(i);
+//     }
+//   }
+  
+//   if (bishopIndices[0] % 2 === bishopIndices[1] % 2) {
+//     return false; 
+//   }
+  
+//   let rookIndices = [];
+//   let kingIndex = -1;
+  
+//   for (let i = 0; i < pieces.length; i++) {
+//     if (pieces[i] === 'R') {
+//       rookIndices.push(i);
+//     }
+//     if (pieces[i] === 'K') {
+//       kingIndex = i;
+//     }
+//   }
+  
+//   if (!(rookIndices[0] < kingIndex && kingIndex < rookIndices[1])) {
+//     return false;
+//   }
+  
+//   return true;
+// }
+
+// console.log(isValidChess960("RNBQKBNR")); 
+// console.log(isValidChess960("BBRKRNNQ")); 
+// console.log(isValidChess960("BRQKRNNB")); 
+// console.log(isValidChess960("RNBKQBNR")); 
+
+// const BISHOP = 'B';
+// const KING = 'K';
+// const ROOK = 'R';
+
+// const checkBishopRule = position => (position.indexOf(BISHOP) + position.lastIndexOf(BISHOP)) % 2 === 1;
+
+// const checkRookRule = position => position.indexOf(ROOK) < position.indexOf(KING)
+//   && position.indexOf(KING) < position.lastIndexOf(ROOK);
+
+// const isValidChess960 = position => checkBishopRule(position) && checkRookRule(position);
+
+// ------------------------------------------------------
