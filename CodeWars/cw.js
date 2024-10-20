@@ -1526,3 +1526,34 @@
 // const isValidChess960 = position => checkBishopRule(position) && checkRookRule(position);
 
 // ------------------------------------------------------
+
+// function disemvowel(str) {
+//   let result = str.replace(/[aeiouAEIOU]/g, '');
+//   console.log(result); 
+//   return result; 
+// }
+
+// disemvowel("This website is for losers LOL!");
+
+// disemvowel = str => str.replace(/[aeiou]/gi,'');
+
+// ------------------------------------------------------
+
+// function abbrevName(name) {
+//   let words = name.split(' ');
+  
+//   let initials = words[0][0].toUpperCase() + '.' + words[1][0].toUpperCase();
+  
+//   return initials;
+// }
+
+// console.log(abbrevName("Sam Harris"));  
+// console.log(abbrevName("patrick feeney")); 
+
+// function abbrevName(name){
+
+//   return name[0].toUpperCase() + "." + name[name.indexOf(" ")+1].toUpperCase();
+
+// }
+
+// ------------------------------------------------------
