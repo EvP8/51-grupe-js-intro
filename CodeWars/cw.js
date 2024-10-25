@@ -1557,3 +1557,42 @@
 // }
 
 // ------------------------------------------------------
+
+// String.prototype.toAlternatingCase = function () {
+//   return this.split('')
+//              .map(char => 
+//                char === char.toUpperCase() 
+//                ? char.toLowerCase() 
+//                : char.toUpperCase()
+//              )
+//              .join('');
+// };
+
+// console.log("hello world".toAlternatingCase()); 
+// console.log("HELLO WORLD".toAlternatingCase()); 
+// console.log("hello WORLD".toAlternatingCase()); 
+// console.log("HeLLo WoRLD".toAlternatingCase()); 
+// console.log("12345".toAlternatingCase());  
+// console.log("1a2b3c4d5e".toAlternatingCase());  
+// console.log("String.prototype.toAlternatingCase".toAlternatingCase()); 
+
+// String.prototype.toAlternatingCase = function () {
+//   return this.split("").map(a => a === a.toUpperCase()? a.toLowerCase(): a.toUpperCase()).join('')
+// }
+
+// ------------------------------------------------------
+
+// String.prototype.isUpperCase = function() {
+//   return this.toString() === this.toUpperCase();
+// };
+
+// console.log("c".isUpperCase());        
+// console.log("C".isUpperCase());                   
+// console.log("hello I AM DONALD".isUpperCase());    
+// console.log("HELLO I AM DONALD".isUpperCase());    
+// console.log("ACSKLDFJSgSKLDFJSKLDFJ".isUpperCase()); 
+// console.log("ACSKLDFJSGSKLDFJSKLDFJ".isUpperCase()); 
+
+// String.prototype.isUpperCase=function() {return this==this.toUpperCase()}
+
+// ------------------------------------------------------
