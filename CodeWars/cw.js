@@ -1596,3 +1596,21 @@
 // String.prototype.isUpperCase=function() {return this==this.toUpperCase()}
 
 // ------------------------------------------------------
+
+// function removeEveryOther(arr) {
+//   return arr.filter((_, index) => index % 2 === 0);
+// }
+
+// console.log(removeEveryOther(["Keep", "Remove", "Keep", "Remove", "Keep"]));
+
+// ------------------------------------------------------
+
+// function divide(weight) {
+//   return weight > 2 && weight % 2 === 0;
+// }
+
+// console.log(divide(4)); 
+// console.log(divide(7));
+// console.log(divide(2));
+
+// ------------------------------------------------------
